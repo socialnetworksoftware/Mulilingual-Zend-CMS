@@ -1,0 +1,48 @@
+body {
+	margin-left: 15px;
+	margin-top: 0px;
+}
+img 
+{
+	border: none;
+}
+A:link 
+{ 
+	color: #0000ff; 
+	text-decoration : none;
+}
+A:visited 
+{
+	color: #0000ff; 
+	text-decoration : none;
+}
+A:active 
+{ 
+	color: #0000ff; 
+	text-decoration : none;
+}
+A:hover 
+{ 
+	color: #0000ff; 
+	text-decoration : underline;
+}
+#middle_content
+{
+ margin-left:10px;
+}
+#error_message
+{
+ background-color:#FFCECE;
+ padding-left:5px;
+}
+.spinner
+{
+ background: url('../img/spinner.gif') ;
+ background-repeat:no-repeat;
+ height:16px;
+ width:16px;
+}
+#paginator 
+{
+ padding-top:5px;
+}

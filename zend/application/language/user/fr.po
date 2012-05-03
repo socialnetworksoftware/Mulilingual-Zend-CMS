@@ -1,0 +1,105 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CMS\n"
+"POT-Creation-Date: 2012-05-02 15:36+0530\n"
+"PO-Revision-Date: 2012-05-03 15:38+0530\n"
+"Last-Translator: shambhu <sp_patnaik2003@yahoo.co.in>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: UNITED STATES\n"
+
+msgid "Login Form"
+msgstr "Login Form"
+
+msgid "User Name"
+msgstr "Nom d'utilisateur"
+
+msgid "Password"
+msgstr "mot de passe"
+
+msgid "Login"
+msgstr "login"
+
+msgid "New User"
+msgstr "Nouvel utilisateur"
+
+msgid "Register Now"
+msgstr "Inscrivez-vous maintenant"
+
+msgid "Member Registration"
+msgstr "Inscription des membres"
+
+msgid "Please enter this form completely:"
+msgstr "S'il vous plaît entrer dans cette forme complètement:"
+
+msgid "First Name"
+msgstr "Prénom"
+
+msgid "Last Name"
+msgstr "nom de famille"
+
+msgid "User E-mail Address"
+msgstr "Utilisateur Adresse e-mail"
+
+msgid "Register"
+msgstr "s'inscrire"
+
+msgid "Member Editing"
+msgstr "Édition membre"
+
+msgid "Edit"
+msgstr "éditer"
+
+msgid "Please update this form completely:"
+msgstr "S'il vous plaît mettre à jour cette forme complètement:"
+
+msgid "Please enter first name."
+msgstr "S'il vous plaît entrez le nom en premier."
+
+msgid "Please enter last name."
+msgstr "S'il vous plaît entrez le nom de famille."
+
+msgid "This email address allready exist."
+msgstr "Cette adresse e-mail existe déjà."
+
+msgid "Please enter password."
+msgstr "S'il vous plaît entrez le mot de passe."
+
+msgid "Spaces are not allowed in password."
+msgstr "Espaces ne sont pas autorisés dans le mot de passe."
+
+msgid "password must be atleast 5 characters."
+msgstr "mot de passe doit être atleast 5 caractères."
+
+msgid "Registration Process"
+msgstr "processus d'inscription"
+
+msgid "Registration succes"
+msgstr "succès d'inscription"
+
+msgid "This user email address allready exist."
+msgstr "Cette adresse email de l'utilisateur existe déjà."
+
+msgid "Editing Process"
+msgstr "processus d'édition"
+
+msgid "Editing success"
+msgstr "Modification de succès"
+
+msgid "Member List"
+msgstr "Liste des membres"
+
+msgid "Logout"
+msgstr "Déconnexion"
+
+msgid "Edit Profile"
+msgstr "Modifier le profil"
+
+msgid "Website"
+msgstr "site Web"
+

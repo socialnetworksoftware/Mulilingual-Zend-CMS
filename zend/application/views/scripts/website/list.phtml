@@ -1,0 +1,46 @@
+<? include "header.phtml"; ?>
+  <h1><?=$this->escape($this->title);?></h1>
+  <h2><?=$this->escape($this->description);?></h2>
+  <a href="<?=$this->base_url?>/add"><?=$this->translate->_('Add Website')?></a>
+  | <?=$this->user_page_link?>
+		<script language="javascript" src="<?=$this->ajax_url?>"></script>
+  <script type="text/javascript">
+
+function getContents(url)
+{
+ $('#use_list_data').html('<div class="spinner"></div>'); 
+ $.get(url, {'format':'html'}, function(data){ 
+            $('#use_list_data').html(data); 
+        });
+
+	return false;
+}
+
+</script> 
+ <?if(count($this->datas)){?>
+		<div id="use_list_data">
+  <table border="1">
+    <tr>
+	  <th><?=$this->translate->_('ID')?></th>
+	  <th><?=$this->translate->_('Title')?></th>	  
+	  <th><?=$this->translate->_('Url')?></th>	  
+	  <th><?=$this->translate->_('Action')?></th>	  
+	</tr>
+  <? $datas = $this->datas;
+     for($i = 0; $i< count($datas);$i++){ ?>
+    <tr>
+	  <td><?=$datas[$i]['id']?></td>	
+	  <td><?=$datas[$i]['title']?></td>	
+	  <td><?=$datas[$i]['url']?></td>	
+	  <td>
+	    <a href="<?=$this->base_url?>/edit/id/<?=$datas[$i]['id']?>"><?=$this->translate->_('Edit')?></a>
+		|
+	    <a href="<?=$this->base_url?>/del/id/<?=$datas[$i]['id']?>"><?=$this->translate->_('Delete')?></a>		
+	  </td>	  
+	</tr> 
+  <? } ?>
+  </table>
+		<?}?>
+  <div id="paginator" ><?=($this->display_page);?></div>
+		</div>
+  <? include "footer.phtml"; ?>

@@ -1,0 +1,138 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2012-05-03 12:22+0530\n"
+"PO-Revision-Date: 2012-05-03 17:32+0530\n"
+"Last-Translator: shambhu <sp_patnaik2003@yahoo.co.in>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+
+msgid "Logout"
+msgstr "Déconnexion"
+
+msgid "Admin Member List"
+msgstr "La liste des membres d'administration"
+
+msgid "Client Member List"
+msgstr "La liste des membres du client"
+
+msgid "Login Form"
+msgstr "Login Form"
+
+msgid "User Name"
+msgstr "Nom d'utilisateur"
+
+msgid "Password"
+msgstr "mot de passe"
+
+msgid "New User :"
+msgstr "Nouvel utilisateur:"
+
+msgid "Register Now"
+msgstr "Inscrivez-vous maintenant"
+
+msgid "Admin Registration"
+msgstr "Enregistrement d'administration"
+
+msgid "First Name"
+msgstr "Prénom"
+
+msgid "Last Name"
+msgstr "nom de famille"
+
+msgid "User E-mail Address"
+msgstr "Utilisateur Adresse e-mail"
+
+msgid "Register"
+msgstr "s'inscrire"
+
+msgid "Please enter this form completely:"
+msgstr "S'il vous plaît entrer dans cette forme complètement:"
+
+msgid "Admin Editing"
+msgstr "Administrateur d'édition"
+
+msgid "Edit"
+msgstr "éditer"
+
+msgid "Please update this form completely:"
+msgstr "S'il vous plaît mettre à jour cette forme complètement:"
+
+msgid "Please enter first name."
+msgstr "S'il vous plaît entrez le nom en premier."
+
+msgid "Please enter last name."
+msgstr "S'il vous plaît entrez le nom de famille."
+
+msgid "This user name already exist."
+msgstr "Ce nom d'utilisateur existe déjà."
+
+msgid "Spaces are not allowed in password."
+msgstr "Espaces ne sont pas autorisés dans le mot de passe."
+
+msgid "password must be atleast 5 characters."
+msgstr "mot de passe doit être atleast 5 caractères."
+
+msgid "Previous Page"
+msgstr "page précédente"
+
+msgid "Next Page"
+msgstr "page suivante"
+
+msgid "Admin List"
+msgstr "Liste d'administration"
+
+msgid "Below, our members:"
+msgstr "Ci-dessous, nos membres:"
+
+msgid "Editing Process"
+msgstr "processus d'édition"
+
+msgid "Editing success"
+msgstr "Modification de succès"
+
+msgid "Delete Data"
+msgstr "supprimer des données"
+
+msgid "Deleting success"
+msgstr "Suppression de succès"
+
+msgid "Client  List"
+msgstr "Liste des clients"
+
+msgid "Inactivate"
+msgstr "inactiver"
+
+msgid "Activate"
+msgstr "activer"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Status"
+msgstr "statut"
+
+msgid "Action"
+msgstr "action"
+
+msgid "Delete"
+msgstr "effacer"
+
+msgid "Home"
+msgstr "maison"
+
+msgid "Member List"
+msgstr "Liste des membres"
+
+msgid "Display Page %1$d out of %2$d page"
+msgstr "Afficher la page  %1$d sur %2$d  page"
+
+msgid "Display Page %1$d out of %2$d pages"
+msgstr "Afficher la page  %1$d sur %2$d  pages"
+

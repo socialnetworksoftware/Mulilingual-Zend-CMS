@@ -1,0 +1,24 @@
+<?php echo $this->doctype() ;?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<?php echo $this->headTitle('') ;?>
+  <?php echo $this->headLink()->appendStylesheet($this->baseUrl('css/main.css')) ?>
+</head>
+<body>
+<div id="header" style="background-color: #EEEEEE; height: 30px;">
+    <div id="header-logo" style="float: left">
+        <b>Header ...............</b>
+    </div>
+    <div align="right"><?php echo $this->currLanguage ;?>&nbsp;&nbsp;&nbsp;
+    </div>
+</div>
+<div id="middle_content">
+ <?php echo $this->layout()->content ?>
+</div>
+<div id="footer" style="background-color: #EEEEEE; height: 30px;">
+        <b>Footerr ...............</b>
+</div>
+
+</body>
+</html>

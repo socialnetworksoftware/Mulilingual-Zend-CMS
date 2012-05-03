@@ -1,0 +1,65 @@
+<? include "header.phtml"; ?>
+  <h1><?=$this->escape($this->title);?></h1>
+  <h2><?=$this->escape($this->description);?></h2>
+  <a href="<?=$this->projectUrl?>admin/"><?=$this->translate->_('Home')?></a>
+  | <a href="<?=$this->projectUrl?>user/register"><?=$this->translate->_('Register')?></a>
+		<script language="javascript" src="<?=$this->ajax_url?>"></script>
+  <script type="text/javascript">
+
+function getContents(url,divId)
+{
+ $('#'+divId).html('<div class="spinner"></div>'); 
+
+ $.get(url, {'format':'html'}, function(data){ 
+            $('#'+divId).html(data); 
+        });
+
+	return false;
+}
+function deleteClient(obj)
+{
+	 var dID = obj.id;
+  dID=dID.substring(4);
+	 $.get('<?=$this->projectUrl?>/user/del/id/'+dID, {'format':'html'}, function(data)
+		{  if(data.valid)
+		    $(obj).parents('tr').first().remove();
+        },'json');
+  	return false;
+}
+
+</script> 
+		<div id="use_list_data">
+  <table border="1" id="myTable">
+    <tr>
+	  <th><?=$this->translate->_('ID')?></th>
+	  <th><?=$this->translate->_('User Name')?></th>	  
+	  <th><?=$this->translate->_('First Name')?></th>	  
+	  <th><?=$this->translate->_('Last Name')?></th>	  
+	  <th><?=$this->translate->_('Status')?></th>	  
+	  <th><?=$this->translate->_('Action')?></th>	  
+	</tr>
+  <? $datas = $this->datas;
+     for($i = 0; $i< count($datas);$i++){ ?>
+    <tr>
+	  <td><?=$datas[$i]['id']?></td>	
+	  <td><?=$datas[$i]['user_email_address']?></td>
+	  <td><?=$datas[$i]['first_name']?></td>	  
+	  <td><?=$datas[$i]['last_name']?></td>	  
+	  <td><?=$datas[$i]['status']?></td>	  
+	  <td><span id="status_<?=$datas[$i]['id']?>">
+			<?if($datas[$i]['status']=='active'){?>
+	    <a onclick="getContents('<?=$this->projectUrl?>admin/cinactive/id/<?=$datas[$i]['id']?>','status_<?=$datas[$i]['id']?>')"><?=$this->translate->_('Inactivate')?></a>
+			<?}else{?>
+	    <a onclick="getContents('<?=$this->projectUrl?>admin/cactive/id/<?=$datas[$i]['id']?>','status_<?=$datas[$i]['id']?>')"><?=$this->translate->_('Activate')?></a>
+			<?}?></span>
+		|
+	    <a href="<?=$this->projectUrl?>user/edit/id/<?=$datas[$i]['id']?>"><?=$this->translate->_('Edit')?></a>
+		|
+	    <a onclick="return deleteClient(this);" id="del_<?=$datas[$i]['id']?>"><?=$this->translate->_('Delete')?></a>		
+	  </td>	  
+	</tr> 
+  <? } ?>
+  </table>
+  <div id="paginator" ><?=($this->display_page);?></div>
+		</div>
+  <? include "footer.phtml"; ?>
